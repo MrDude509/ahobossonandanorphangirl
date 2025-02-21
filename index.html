@@ -7,15 +7,19 @@
     <style>
         @media screen and (max-width: 600px) {
     .content {
-        flex-direction: column;
-        text-align: center;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        text-align: left;
+        gap: 10px; /* Space between text and image */
     }
     .content p {
-        padding-right: 0;
+        flex: 1; /* Allows the text to resize */
+        font-size: 14px; /* Adjust for readability */
     }
     .content img {
-        max-width: 80%;
-        margin-top: 10px;
+        max-width: 35%; /* Keep image proportionate */
+        height: auto;
     }
 }
         body {

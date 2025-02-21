@@ -5,6 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>A Hobo’s Son and an Orphan Girl</title>
     <style>
+        @media screen and (max-width: 600px) {
+    .content {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px; /* Space between text and image */
+    }
+    .content p {
+        width: 60%; /* Ensure text takes up most of the space */
+        min-width: 100px; /* Prevents text from disappearing completely */
+        font-size: 3.8vw; /* Makes text responsive based on screen size */
+    }
+    .content img {
+        width: 35%; /* Keep image proportionate */
+        height: auto;
+        min-width: 80px; /* Prevents the image from becoming too small */
+    }
+}
         body {
             font-family: Arial, sans-serif;
             margin: 0;
